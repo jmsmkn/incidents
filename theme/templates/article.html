@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<article>
+  <h1>{{ article.title }}</h1>
+  <p>Date Started: {{ article.metadata['date_started'] }}</p>
+  <p>Date Resolved: {{ article.metadata['date_resolved'] }}</p>
+  <div>{{ article.content }}</div>
+</article>
+{% endblock %}

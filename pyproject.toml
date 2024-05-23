@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "incidents"
+version = "0.1.0"
+description = ""
+authors = ["James Meakin <12661555+jmsmkn@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pelican = "*"
+markdown = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

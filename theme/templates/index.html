@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Service Incidents</h1>
+<ul>
+  {% for article in articles %}
+  <li>
+    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+    <p>{{ article.date }} - Tags: {{ article.tags }}</p>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
