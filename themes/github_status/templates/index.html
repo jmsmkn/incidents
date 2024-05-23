@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Service Incidents</h2>
+<ul class="incident-list">
+    {% for article in articles %}
+    <li class="incident">
+        <h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
+        <p><strong>Date:</strong> {{ article.date }}</p>
+        <p><strong>Tags:</strong> {{ article.tags | join(", ") }}</p>
+        <p><strong>Started:</strong> {{ article.metadata.date_started }}</p>
+        <p><strong>Resolved:</strong> {{ article.metadata.date_resolved }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -34,12 +34,12 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
 
-# Theme
-THEME = 'notmyidea'
-
 # URL settings
 ARTICLE_URL = 'incidents/{slug}.html'
 ARTICLE_SAVE_AS = 'incidents/{slug}.html'
+
+# Theme
+THEME = 'themes/github_status'
 
 TAG_URL = 'tags/{slug}.html'
 TAG_SAVE_AS = 'tags/{slug}.html'

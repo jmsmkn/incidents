@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="incident-detail">
+    <h2>{{ article.title }}</h2>
+    <p><strong>Date Started:</strong> {{ article.metadata.date_started }}</p>
+    <p><strong>Date Resolved:</strong> {{ article.metadata.date_resolved }}</p>
+    <div class="incident-content">
+        {{ article.content }}
+    </div>
+</article>
+{% endblock %}
+
